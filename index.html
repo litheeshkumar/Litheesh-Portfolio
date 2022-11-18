@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Litheesh - Portfolio</title>
+    <script src="https://kit.fontawesome.com/9c31ab7049.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <div>
+                <img src="images/logo.png" class="logo">
+            </div>
+            <div class="KLK">
+                <ul id="sidemenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Skills</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+            </div>
+        </nav>
+        <div class="intro">
+            <div class="start-tab1">
+                <h1>Hi, I'm <br>Kamarthi <span>Litheesh</span> Kumar</h1>
+                <p>Competitive Programmer</p>
+            </div>
+            <div  class="start-tab2 icons-first">
+                <a href="https://www.facebook.com/profile.php?id=100013081330560"><i class="fa-brands fa-facebook"></i></a> <br>
+                <a href="https://twitter.com/LKamarthi"><i class="fa-brands fa-twitter"></i></a> <br>
+                <a href="https://www.instagram.com/litheeshkumarkamarthi/"><i class="fa-brands fa-instagram"></i></a> <br>
+                <a href="https://github.com/litheeshkumar"><i class="fa-brands fa-github"></i></a> <br>
+                <a href="https://www.linkedin.com/in/kamarthi-litheesh-kumar-51b527194/"><i class="fa-brands fa-linkedin"></i></a> <br>
+                <a href="https://leetcode.com/litheeshk_14/"><i class="fa-solid fa-code"></i></a> <br>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -----------------------about section----------------------------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.jpeg" alt="mypic">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me:</h1>
+                <p>My name is <span>Kamarthi Litheesh Kumar</span>. I am currently final year undergrad at IIIT Sricity, majoring in Electronics and communications. I am interested in <span id="second">web development</span>, Data structures and Algorithms. I have experience and good knowledge in C++, OOPS concepts. I believe that skills that I have attained from college life and dynamic environment define me and I am looking to implementing and polishing them in any opportunity that I receive.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('certifications')">Certifications</p>
+                </div>
+                <div class="tab-contents active-tab" id="education">
+                    <ul>
+                        <li><span>2019 - Current</span><br>B.Tech - ECE from IIIT Sricity</li>
+                        <li><span>2017 - 2019</span><br>12th from Sri Chaitanya College, Vijayawada</li>
+                        <li><span>2016 - 2017</span><br>10th from Sri Chaitanya School, Vijayawada</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="skills">
+                    <ul>
+                        <li><span>Languages</span><br>C, C++, Python, Matlab.</li>
+                        <li><span>Course Works</span><br>OOPS, Data Structures, Algorithms, CN.</li>
+                        <li><span>Others</span><br>HTML, CSS, MySQL, Git, OS, Arduino.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="certifications">
+                    <ul>
+                        <li><span>Coursera</span><br><a href="https://drive.google.com/file/d/1ZZ0BM09IzadjO63RcwosDj2xSjgvAkk_/view">Getting Started with Python</a> </li>
+                        <li><span>Hackerrank</span><br><a href="https://drive.google.com/file/d/1dxt6ssV372fc2Xlnwx9Cfia_t7cnduTU/view">Problem Solving (Basic)</a> </li>
+                        <li><span>Hackerrank</span><br><a href="https://drive.google.com/file/d/1QKKqJi1i746T0aEzl5aQXoOXUdUerWME/view">Python (Basic)</a> </li>
+                        <li><span>NIT Trichy</span><br><a href="https://drive.google.com/file/d/1Esyc-xitRsWn7dcS2SyTvHV4Im-cuQ7o/view">App Development (Basic)</a> </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -----------------------skills section----------------------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">Skills</h1>
+        <div class="services-list">
+            <div>
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="C">
+                <h2>C</h2>
+            </div>
+            <div>
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cpp">
+                <h2>C++</h2>
+            </div>
+            <div>
+                <i class="fa-solid fa-database"></i>
+                <h2>Data Structures</h2>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>Algorithms</h2>
+            </div>
+        </div>
+        <div class="services-list">
+            <div>
+                <img src="https://user-images.githubusercontent.com/56591763/201489627-54df9f0d-57d1-4174-a111-0eeccf5eb72a.png" alt="HTML">
+                <h2>HTML</h2>
+            </div>
+            <div>
+                <img src="https://user-images.githubusercontent.com/56591763/201489589-ac4c3c93-06d1-4b30-b7a1-8cf413a598e8.png" alt="CSS">
+                <h2>CSS</h2>
+            </div>
+            <div>
+                <img src="https://user-images.githubusercontent.com/56591763/201489803-45b66bca-c516-4343-9b1c-634077620bdd.png" alt="JavaScript">
+                <h2>JavaScript</h2>
+            </div>
+            <div>
+                <img src="https://user-images.githubusercontent.com/56591763/201489686-de1bdb4e-b754-4a39-883c-0d2ffd7903cc.png" alt="MySQL">
+                <h2>MySQL</h2>
+            </div>
+        </div>
+        <div class="services-list">
+            <div>
+                <img src="https://user-images.githubusercontent.com/56591763/201489787-5a56b9f2-986d-4e64-88c8-97eea0ab5ff2.png" alt="Python">
+                <h2>Python</h2>
+            </div>
+            <div>
+                <img src="https://user-images.githubusercontent.com/56591763/201489716-6fd9e5f6-3456-4605-a7c1-423b1a2529bc.png" alt="Git">
+                <h2>Git</h2>
+            </div>
+            <div>
+                <img src="https://user-images.githubusercontent.com/56591763/201490223-9ef982aa-22da-4944-adc7-5caec34c383e.png" alt="Arduino">
+                <h2>Arduino</h2>
+            </div>
+            <div>
+                <img src="https://user-images.githubusercontent.com/56591763/201489537-02309f92-63e3-4923-96b1-cba10b5006cb.png" alt="Matlab">
+                <h2>Matlab</h2>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -----------------------projects section----------------------------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/Project-1.jpg" alt="project1">
+                <div class="layer">
+                    <h3>Drone Applications</h3>
+                    <p>Used a Tello drone to collect data from nodes to the cloud. By computer vision, Tello can correct its path using OpenCV Algorithms</p>
+                    <a href="https://github.com/litheeshkumar/IoT-Connectivity-for-Drone-applications"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Project-2.png" alt="project2">
+                <div class="layer">
+                    <h3>Wine Quality Prediction</h3>
+                    <p>Trained these features to Logistic Regression, Gaussian SVM, Neural Network Classifiers and obtained confusion matrices, accuracy, ROC Curves</p>
+                    <a href="https://github.com/litheeshkumar/Wine-Quality-Prediction"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Project-3.jpg" alt="project3">
+                <div class="layer">
+                    <h3>Tollgate Management System</h3>
+                    <p>Developed a system to monitor the traffic near the toll booths and suggests faster lane as a notification to mobile App and displays at entrance of the tollgate</p>
+                    <a href="https://github.com/litheeshkumar/Automatic-Tollgate-Management-System"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/litheeshkumar?tab=repositories" class="btn">See more</a>
+    </div>
+</div>
+<!-- -----------------------contact section----------------------------- -->
+<div id="contact">
+    <div class="container cont">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title-contact">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> litheesh.kamarthi@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> +91-79934 29770</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100013081330560"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/LKamarthi"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/litheeshkumarkamarthi/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com/litheeshkumar"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/kamarthi-litheesh-kumar-51b527194/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://leetcode.com/litheeshk_14/"><i class="fa-solid fa-code"></i></a>
+                </div>
+                <a href="images/Litheesh_Kumar-Resume.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Meassage" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © 2022 Kamarthi Litheesh Kumar. All rights reserved.</p>
+    </div>
+</div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbx520jhjUZhWKvcW59T4pxHVwSBbUulacUit7x6P3Dh0HN6rULeWPNLIVRorGWxwZ0uUg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerText = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+    
+</script>
+</body>
+</html>
